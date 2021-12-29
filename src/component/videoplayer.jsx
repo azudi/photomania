@@ -97,7 +97,7 @@
                   {info.map(e=>e.id==localStorage.getItem("id")?    
                 <video className='video' src={e.videos.large.url} poster={e.userImageURL} controls></video>:''
                 )}
-                 <a href={document.querySelector(".video").src} download><span className='fa fa-download download_icon'></span></a>
+                 <a href='' download><span className='fa fa-download download_icon'></span></a>
                 </div>
                </div> {/* end of video container} */}
               <div className='related_context alter_context col-md-5 col-lg-3'>
