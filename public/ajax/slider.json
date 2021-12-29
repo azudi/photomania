@@ -1,0 +1,37 @@
+{
+ "name":"sliders",
+ "slideContent":[
+     {"name":"burger",
+"discription":"all and any snack available start booking now!!",
+"href":"",
+"background":"pics/photo-1547592166-23ac45744acd.jpg",
+"id":"1fd"},
+{"name":"dishes",
+    "discription":"all and any snack available start booking now!!",
+    "href":"",
+    "background":"pics/dish2.jpg",
+    "id":"2fd"},
+    {"name":"food",
+        "discription":"all and any snack available start booking now!!",
+        "href":"",
+        "background":"pics/dish3.jpg",
+        "id":"3fd"},
+        {"name":"pizza",
+            "discription":"all and any snack available start booking now!!",
+            "href":"",
+            "background":"pics/food.jpg",
+            "id":"4fd"},
+            {"name":"meat-pie",
+                "discription":"all and any snack available start booking now!!",
+                "href":"",
+                "background":"pics/food2.jpg",
+                "id":"5fd"},
+                {"name":"hotdog",
+                    "discription":"all and any snack available start booking now!!",
+                    "href":"",
+                    "background":"pics/food.jpg",
+                    "id":"6fd"}
+                                                            
+ ]
+
+}

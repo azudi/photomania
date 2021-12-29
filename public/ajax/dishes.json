@@ -1,0 +1,72 @@
+[ 
+   { "id":"11",
+      "discription":" food interm lorem ipseum chavreur sect practice del preil do baels parc dasbash manchi iran sak deq",
+      "img":"pics/psx-meal - Copy.png",
+       "type":"arsorted",
+       "cost":"3.00"
+  },
+   { "id":"10",
+      "discription":" food interm lorem ipseumw chavreur sect practice del preil do baels parc dasbash manchi iran sak ",
+      "img":"pics/psx-dish - Copy.png",
+      "type":"arsorted",
+      "cost":"2.00"
+     
+  },
+   { "id":"9",
+      "discription":" food interm lorem ipseum chavreur acter practice del preil do baels parc dasbash manchi iran sak deq",
+      "img":"pics/photo-1531089073319-17596b946d42.jpeg",
+       "type":"continental",
+       "cost":"2.50"
+  },
+   { "id":"8",
+      "discription":" food interm lorem ipseum chavreur sect practice del preil do zaels parc dasbash manchi iran sak deq",
+      "img":"pics/plate-remove - Copy.png",
+      "type":"local",
+      "cost":"2.00"
+     
+  },
+   { "id":"7",
+      "discription":" Dish interm lorem ipseum chavreur sect practice del preil do baels parc dasbash manchi iran sak deq",
+      "img":"pics/food-removebg-preview - Copy.png",
+      "type":"local",
+      "cost":"4.50"
+     
+  },
+    { "id":"6",
+   "discription":" food interm lorem ipseum chavreur sect practice del preil do bael parc dasbash manchi iran sak deq",
+   "img":"pics/food2-removebg-preview - Copy.png",
+   "type":"continental",
+   "cost":"2.00"
+  
+},
+   { "id":"5",
+    "discription":" food interm lorem ipseum chavreur sect practice del reil do baels parc dasbash manchi iran sak deq",
+    "img":"pics/photo-1512621776951-a57141f2eefd.jpg",
+    "type":"local",
+    "cost":"2.50"
+},
+ { "id":"4",
+    "discription":" food interm lorem ipseum chavre sect practice del preil do baels parc dasbash manchi iran sak deq",
+    "img":"pics/photo-1473093295043-cdd812d0e601.jpg",
+    "type":"continental",
+    "cost":"2.00"
+},
+{ "id":"3",
+   "discription":" food interm lorem ipseum chavreur sect practice de preil do baels parc dasbash manchi iran sak deq",
+   "img":"pics/food.jpg",
+   "type":"continental",
+   "cost":"3.20"
+},
+{ "id":"2",
+   "discription":" food interm lorem ipseu chavreur sect practice del preil do baels parc dasbash manchi iran sak deq",
+   "img":"pics/dish3.jpg",
+   "type":"continental",
+   "cost":"1.50"
+},
+{ "id":"1",
+   "discription":" food interm lor ipseum chavreur sect practice del preil do baels parc dasbash manchi iran sak deq",
+   "img":"pics/dish2.jpg",
+   "type":"continental",
+   "cost":"2.00"
+}
+]

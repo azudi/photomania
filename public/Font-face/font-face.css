@@ -1,0 +1,217 @@
+ 
+ @font-face{
+  font-family:vintage;
+  font-style: normal;
+  font-weight: normal;
+  src:url(eva-fangoria-cufonfonts/EvaFangoriaSuperItalic-Ypj8.otf);
+  }
+  
+  @font-face{
+    font-family:ease;
+    src:url(friz-quadrata-cufonfonts/friz-quadrata-regular-os-5870333951e7c.ttf);
+  }
+  @font-face{
+  font-family:linux-a;
+  src:url(linux-biolinum-cufonfonts/LinBiolinum_aUI.ttf);
+  }
+  @font-face{
+  font-family:linux-b;
+  src:url(linux-biolinum-cufonfonts/LinBiolinum_aW.ttf);
+  }
+  @font-face{
+  font-family:linux-c;
+  src:url(linux-biolinum-cufonfonts/LinBiolinum_aBL.ttf);
+  }
+  @font-face{
+  font-family:linux-d;
+  src:url(linux-biolinum-cufonfonts/LinBiolinum_aSB.ttf);
+  }
+  @font-face{
+  font-family:raleway;
+  src:url(master/raleway-master/webfonts/raleway_thin-webfont.ttf);
+  }
+  
+  @font-face{
+  font-family:newfont2;
+  src:url(quicksand/Quicksand-bold.otf);
+  }
+  @font-face{
+  font-family:newfonts;
+  src:url(catshop-cufonfonts/CatShop.ttf);
+  }
+  @font-face{
+  font-family:bagnard;
+  src:url(bagnard-cufonfonts/Bagnard.otf);
+  }
+  @font-face{
+  font-family:optima;
+  src:url(optima-cufonfonts/OPTIMA.TTF);
+  }
+  @font-face{
+  font-family:simple;
+  src:url(simple-cufonfonts-webfont/Simple-Regular.woff);
+  }
+  @font-face{
+  font-family:pee-on-face;
+  src:url(pee-on-face-cufonfonts/pee-on-your-face.ttf);
+  }
+  @font-face{
+  font-family:simple-dandy;
+  src:url(simple-dandy-cufonfonts/Regular.ttf);
+  }
+  @font-face{
+  font-family:simple-dry;
+  src:url(simple-dry-brush-cufonfonts/SimpleDryBrushItalic-13Dg.ttf);
+  }
+  @font-face{
+  font-family:seven-regular;
+  src:url(priborg-sans-cufonfonts/PriborgSans.ttf);
+  }
+  @font-face{
+  font-family:vintage queen;
+  src:url(vintage-queens-cufonfonts/VintageQueens-PersonalUse.ttf);
+  }
+
+ @font-face{
+ font-family:comodo;
+ src:url(comodo-free-cufonfonts/Comodo Vintage Free.ttf)
+ }
+ @font-face {
+ font-family: 'Lovelo Line Light';
+ font-style: normal;
+ font-weight: normal;
+ src: local('Lovelo Line Light'), url('lovelo-cufonfonts-webfont/Lovelo-LineLight.woff') format('woff');
+ }
+ 
+ 
+ @font-face {
+ font-family: 'Lovelo Line Bold';
+ font-style: normal;
+ font-weight: normal;
+ src: local('Lovelo Line Bold'), url('lovelo-cufonfonts-webfont/Lovelo-LineBold.woff') format('woff');
+ }
+ 
+ 
+ @font-face {
+ font-family: 'Lovelo Black';
+ font-style: normal;
+ font-weight: normal;
+ src: local('Lovelo Black'), url('lovelo-cufonfonts-webfont/Lovelo-Black.woff') format('woff');
+ }
+
+ @font-face{
+ font-family:priborgsans;
+ src:url(priborg-sans-cufonfonts/PriborgSans.ttf);
+ }
+ 
+ @font-face{
+ font-family:borgsquad-up;
+ src:url(borgsquad-cufonfonts/Borgsquad-JLxB.otf);
+ }
+ 
+ @font-face{
+ font-family:fancy;
+ src:url(vintage-party-cufonfonts/VintageParty-FreeVersion.ttf);
+ }
+ @font-face{
+ font-family:quicksand light;
+ src:url(quicksand/Quicksand-Light.otf);
+ }
+ @font-face{
+ font-family:quicksand dash;
+ src:url(quicksand/Quicksand_Dash.otf);
+ }
+ @font-face{
+ font-family:quicksand regular;
+ src:url(quicksand/Quicksand-Regular.otf);
+ }
+  @font-face{
+  font-family:quicksand bold;
+  src:url(quicksand/Quicksand-Bold.otf);
+  }
+  @font-face{
+  font-family:friz;
+  src:url(friz-quadrata-cufonfonts/friz-quadrata-regular-os-5870333951e7c.ttf);
+  }  
+  @font-face{
+  font-family:comodo;
+  src:url(comodo-free-cufonfonts/Comodo Regular Free.ttf);
+  }
+  @font-face{
+  font-family:elster;
+  src:url(elstersans-cufonfonts/ElsterSans.ttf);
+  }
+  @font-face{
+  font-family:volloa;
+  src:url(volloa-personal-use-cufonfonts/VolloaPersonalUseRegular-emLp.otf);
+  }
+  
+  
+
+  @font-face{
+  font-family:fancy card;
+  src:url(fancy-card-text-cufonfonts/FancyCardText.ttf);
+  }
+
+
+  @font-face{
+  font-family:destroy;
+  src:url(destroy-cufonfonts/playtime.ttf);
+  }
+  @font-face{
+  font-family:myraidpro;
+  src:url(destroy-cufonfonts/MYRIADPRO-REGULAR.OTF);
+  }
+  
+  
+  
+  @font-face{
+  font-family:lane-narrow;
+  src:url(lane---narrow-cufonfonts/LANENAR_.ttf);
+  }
+  @font-face{
+  font-family:Christmas-card;
+  src:url(christmas-card-cufonfonts/CHRICI__.TTF);
+  }
+  
+  @font-face{
+  font-family:lane-cane;
+  src:url(lane---cane-cufonfonts/LANECANE.ttf);
+  }
+  @font-face{
+  font-family:lane-posh;
+  src:url(lane---cane-cufonfonts/LANEPOSH.ttf);
+  }
+  @font-face{
+  font-family:lane-nar;
+  src:url(lane---cane-cufonfonts/LANENAR_.ttf);
+  }
+  @font-face{
+  font-family:lane-up;
+  src:url(lane---cane-cufonfonts/LANEUP__.ttf);
+  }
+  @font-face{
+  font-family:samsung-bold;   /*  these is san-serif font*/
+  src:url(samsung-sharp-sans-regular-cufonfonts/samsung_s_sharp_by_629lyric-d8y77l9.ttf);
+  }
+  @font-face{
+  font-family:samsung-light;   /*  these is san-serif font*/
+  src:url(samsung-sharp-sans-regular-cufonfonts/SamsungSharpSansRegular-Regular.ttf);
+  }
+  
+  
+  @font-face{
+  font-family:home;   /*  these is san-serif font*/
+  src:url(becauseyouwerehome-cufonfonts/Becauseyouwerehome-AzpM.ttf);
+  }
+  @font-face{
+  font-family:league;   /*  these is san-serif font*/
+  src:url(out-of-my-league-cufonfonts/OutOfMyLeagueRegular-V1ol.ttf);
+  }
+  @font-face{
+  font-family:face;   /*  these is san-serif font*/
+  src:url(straight-face-cufonfonts/Straight faced.ttf);
+  }
+  
+  
+  
