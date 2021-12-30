@@ -9,6 +9,7 @@
  import "./Font-face/font-face.css"
  import "./css/font-awesome.min.css";
  import Footer from './footer';
+ import Loader from './loader';
  import image from "./css/third-phone.jpeg";
  import fullpage from "fullpage.js/dist/fullpage"
  import {Link} from "react-router-dom"
@@ -35,6 +36,7 @@ const [side,setSide]=React.useState([
    const html=(content)=>{
      if(content){
        setInfo([...content.data])
+       document.querySelector(".roller_svg").remove()
      }
    }
 
@@ -149,6 +151,9 @@ for(let f=0;f<videoText.length;f++){
     console.log(theme)
      return (
          <div>
+
+          
+             <Loader></Loader>
 
            <div className='pop-img flowup flex'>
             

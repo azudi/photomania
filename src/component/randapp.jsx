@@ -9,6 +9,7 @@
  import "./Font-face/font-face.css"
  import "./css/font-awesome.min.css";
  import Footer from './footer';
+ import Loader from './loader';
  import video from "./css/Aegean_Sea_1.mp4"
   import fullpage from "fullpage.js/dist/fullpage"
   import {Link} from "react-router-dom"
@@ -36,6 +37,7 @@
     const html=(content)=>{
       if(content){
         setInfo([...content.data.hits])
+        document.querySelector(".roller_svg").remove()
       }
     }
     console.log("info",info)
@@ -85,6 +87,8 @@
      console.log(theme)
       return (
           <div>
+             <Loader>bbbbbb</Loader>
+
               <div className='video_header flex relative'>
                 <div className='flex col-12 relative put_back'>
                 {/* begin of paragraph */}

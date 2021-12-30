@@ -269,7 +269,7 @@ border-radius: 5px;margin:0 0.5em;
     margin-top: 0.3em;
 }
 .email_form{
-    position: absolute !important;bottom: 0;right:0%;
+    position: absolute !important;bottom: 20vh;right:0%;
     width:300px;background: white;z-index: 20;padding: 1em;
    box-shadow: 2px 5px 10px rgba(0,0,0,0.3);border-radius: 7px;
 }
@@ -348,6 +348,45 @@ a:hover{
     width:35px;height: 35px;background: rgba(255,255,255,0.4);
     display: inline-flex !important;justify-content: center;align-items: center;
     border-radius: 50%;
+}
+.roller_svg{
+    position: fixed;top:0;
+    left:0;width:100vw;height:100vh;
+    background: white;z-index: 1000;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+.roller_svg>svg{
+    width:100px;height: 100px;
+    animation: 2s infinite linear roller_box;
+}
+.roller_svg>svg>circle:nth-last-of-type(2){
+    r:43;cx:50;cy:50;
+    stroke:var(--blue);fill: transparent;
+    stroke-width: 7px;stroke-dasharray: calc(50 * 6);
+    stroke-dashoffset: 300;animation: 2s infinite linear roller;
+}
+.roller_svg>svg>circle:nth-last-of-type(1){
+    r:43;cx:50;cy:50;
+    stroke:rgba(100,100,100,0.1);fill: transparent;
+    stroke-width: 7px;stroke-dasharray:0;
+   
+}
+@keyframes roller{
+    0%{
+        stroke-dashoffset: 280 
+    }
+    50%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 280 
+    }
+}
+@keyframes roller_box{
+    100%{
+        transform: rotateZ(360deg);
+    }
 }
 
 
