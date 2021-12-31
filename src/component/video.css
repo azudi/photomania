@@ -84,12 +84,13 @@ margin-left: 0;font-family: samsung-bold;
     left:calc(50% - 10px);color: var(--blue);font-size: 0.7em !important;
     font-weight: 100;border-radius: 50%;line-height: 0;padding-left: 2px;
     padding-top: 2px;z-index: 1;
-}
+  }
 .start_icon_reduce::after{
     content: "";position: absolute;width: 200%;height: 200%;top:-50%;
     left:-50%;border-radius: inherit;background: rgba(255,255,255,0.4);
     z-index: -1;
- }
+   }
+ 
 .video_name{
     position: absolute;bottom: -50%;left: 5px;color: rgba(255,255,255,0.8);
     font-family: helvetica;font-weight: 600;padding: 0em 1em;transition: 0.3s;
@@ -376,6 +377,7 @@ a:hover{
     stroke:var(--blue);fill: transparent;
     stroke-width: 7px;stroke-dasharray: calc(50 * 6);
     stroke-dashoffset: 300;animation: 2s infinite linear roller;
+    stroke-linecap: round;
 }
 .roller_svg>svg>circle:nth-last-of-type(1){
     r:43;cx:50;cy:50;
@@ -385,13 +387,13 @@ a:hover{
 }
 @keyframes roller{
     0%{
-        stroke-dashoffset: 280 
+        stroke-dashoffset: 290 
     }
-    50%{
+    70%{
         stroke-dashoffset: 0;
     }
     100%{
-        stroke-dashoffset: 280 
+        stroke-dashoffset: 290
     }
 }
 @keyframes roller_box{
@@ -399,7 +401,7 @@ a:hover{
         transform: rotateZ(0);
     }
     100%{
-        transform: rotateZ(360deg);
+        transform: rotateZ(720deg);
     }
     
 }
