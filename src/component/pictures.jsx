@@ -10,14 +10,14 @@
  import "./css/font-awesome.min.css";
  import Footer from './footer';
  import Loader from './loader';
- import image from "./css/third-phone.jpeg";
+ import interact from 'interactjs';
  import fullpage from "fullpage.js/dist/fullpage"
  import {Link} from "react-router-dom"
   
  export default function Pictures(){
 let {id}=useParams();
 let {sec}=useParams();
-
+const [image,setImage]=React.useState("")
 const [side,setSide]=React.useState([
   "natural", "beauties","housing", "estate","human","gathering","combact", "fight"
 ])
@@ -88,7 +88,10 @@ for(let f=0;f<videoText.length;f++){
 
       //download section pop up
      const changeImg=(e)=>{
-          document.querySelector(".show-img").src=e.target.src;
+       let remain=info.filter(item=>info.indexOf(item)==e.target.id)
+       localStorage.setItem("bgImage",remain[0].urls.full)
+       setImage(e.target.src)
+          document.querySelector(".show-img").src=image;
           document.querySelector(".pop-img").classList.remove("flowup")
       }
       const flowUp=()=>{
@@ -163,6 +166,7 @@ for(let f=0;f<videoText.length;f++){
                     
                     <button className='clicker-button mar-1'><a href={image} download>download</a></button>
                     <button onClick={hidePics} className='click-button-o mar-1'>talk to photographer</button>
+                    <button className='click-button-o mar-1'>make quote</button>
                   </div>
               </div>{/* end of upSlide */}
               <div className='col-md-6 col-lg-5 col-xl-4 upSlide hidepics'>
@@ -235,7 +239,7 @@ for(let f=0;f<videoText.length;f++){
                 {info.map(e=>info.indexOf(e)<10?
                   <div className='video_img_contain relative' key={e.id}>
                      <span className='video_name'>{e.alt_description}</span>
-                       <img className='video_img' onClick={changeImg} src={e.urls.small} alt={e.tags}></img>
+                       <img className='video_img' id={info.indexOf(e)} onClick={changeImg} src={e.urls.small} alt={e.tags}></img>
                      </div>
                 :"")}
                 </div>{/* end of first image looping */}  
@@ -243,7 +247,7 @@ for(let f=0;f<videoText.length;f++){
                 {info.map(e=>info.indexOf(e)>10&&info.indexOf(e)<20?
                   <div className='video_img_contain relative' key={e.id}>
                      <span className='video_name'>{e.alt_description}</span>
-                       <img className='video_img' onClick={changeImg} src={e.urls.small} alt={e.tags}></img>
+                       <img className='video_img' id={info.indexOf(e)} onClick={changeImg} src={e.urls.small} alt={e.tags}></img>
                      </div>
                 :"")}
                 </div>{/* end of second image looping */}  
@@ -251,7 +255,7 @@ for(let f=0;f<videoText.length;f++){
                 {info.map(e=>info.indexOf(e)>20&&info.indexOf(e)<30?
                   <div className='video_img_contain relative' key={e.id}>
                      <span className='video_name'>{e.alt_description}</span>
-                       <img className='video_img' onClick={changeImg} src={e.urls.small} alt={e.tags}></img>
+                       <img className='video_img' id={info.indexOf(e)} onClick={changeImg} src={e.urls.small} alt={e.tags}></img>
                      </div>
                 :"")}
                 </div>{/* end of last image looping */}

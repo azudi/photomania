@@ -6,7 +6,8 @@ import { ApiRouter, BrowserRouter as Router, Switch ,Route, BrowserRouter, usePa
 import ChefMaster from './component/chefMaster';
 import Body from "./component/body";
 import Pictures from './component/pictures';
-import Error from "./component/404"
+import Error from "./component/404";
+import Draggable from './component/dragpage';
 import Videoplayer from './component/videoplayer';
 import { Themes } from './component/context';
     import Pager from "./component/rand"  
@@ -25,6 +26,7 @@ ReactDOM.render(
     
      <Route path="/video/:page/:search" exact component={Pager}/>
      <Route path="/pictures/:id/:sec" exact component={Pictures}/>
+     <Route path="/build" exact component={Draggable}/>
      <Route path="/videoplayer" exact component={Videoplayer}/>
      <Route component={Error}/>
      </Switch>

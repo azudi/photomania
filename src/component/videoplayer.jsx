@@ -36,11 +36,9 @@
     //setting the src of the video
     for(let v=0;v<info.length;v++){
       if(info[v].id==localStorage.getItem("id")){
-      console.log(info[v].id)
       }
     }      
-    console.log(JSON.parse(localStorage.getItem("info")))
-},[])
+  },[])
      const theme=useContext(Changer)
     const [look,setLook]=React.useState(theme.day)
     const [query,setQuery]=React.useState(true)
@@ -97,7 +95,7 @@
                   {info.map(e=>e.id==localStorage.getItem("id")?    
                 <video className='video' src={e.videos.large.url} poster={e.userImageURL} controls></video>:''
                 )}
-                 <a href='' download><span className='fa fa-download download_icon'></span></a>
+                 <a href={info[0].videos.large.url} download><span className='fa fa-download download_icon'></span></a>
                 </div>
                </div> {/* end of video container} */}
               <div className='related_context alter_context col-md-5 col-lg-3'>
