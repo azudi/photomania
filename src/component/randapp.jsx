@@ -41,9 +41,16 @@
       }
     }
     console.log("info",info)
-    const changeIcon=(e)=>{
-       e.target.setAttribute("class","fa fa-star")
-    }
+     //setting rating srar icon
+   const starIcons=[...document.querySelectorAll(".fa-star-o")]
+   const changeIcon=(e)=>{
+        for(let i=0;i<starIcons.length;i++){
+          if(i<=starIcons.indexOf(e.target)) {
+        starIcons[i].setAttribute("class","fa fa-star")  
+        }
+      }
+        
+   }
    const setId=(e)=>{
     localStorage.setItem("id",e.target.id)
     localStorage.setItem("info",JSON.stringify(info))
@@ -87,7 +94,7 @@
      console.log(theme)
       return (
           <div>
-             <Loader>bbbbbb</Loader>
+             <Loader></Loader>
 
               <div className='video_header flex relative'>
                 <div className='flex col-12 relative put_back'>

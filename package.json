@@ -10,12 +10,13 @@
     "@types/node": "^16.11.13",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "axios": "^0.24.0",
     "D": "^1.0.0",
+    "axios": "^0.24.0",
     "express": "^4.17.1",
     "fullpage.js": "^3.1.2",
     "gsap": "^3.8.0",
     "html2canvas": "^1.4.0",
+    "interact": "0.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-particles-js": "^3.6.0",
@@ -58,7 +59,7 @@
     "@types/swiper": "^5.4.3",
     "gh-pages": "^3.2.3",
     "video.js": "^7.17.0",
-    "node.js":"^14.13.1"
+    "node.js": "^16.13.1"
   },
   "engines": {
     "node": "14.13.1"

@@ -1,15 +1,10 @@
 
  import * as React from 'react';
- import { useContext } from 'react';
- import { useParams } from "react-router-dom"
- import { Changer } from '..';
- import axios from 'axios';
  import "./bootstrap.css";
  import "./video.css";
  import "./Font-face/font-face.css"
  import "./css/font-awesome.min.css";
  import Footer from './footer';
- import image from "./css/third-phone.jpeg";
  import {Link} from "react-router-dom";
  import {Style} from "./css"
  import interact from 'interactjs';
@@ -156,8 +151,10 @@ window.dragMoveListener = dragMoveListener
    },[])
 
 
- 
+    const starIcons=[...document.querySelectorAll("fa-star-o")]
    const changeIcon=(e)=>{
+     alert(e.target)
+     alert(starIcons.indexOf(e.target))
       e.target.setAttribute("class","fa fa-star")
    }
    //code below for movable boxes
@@ -190,9 +187,11 @@ window.dragMoveListener = dragMoveListener
                   element.style.height=element.scrollHeight+"px"
            });
          }
+         //resizing the height of the text box
          const resizeHeight=(e)=>{
             e.target.style.height=e.target.scrollHeight+"px"
          }
+         //check boxes displayed by the right
          const checkBoxes=(e)=>{
            setIndex(e.target.id)
               for(let i=0;i<inputBox.length;i++){
@@ -209,6 +208,7 @@ window.dragMoveListener = dragMoveListener
          }
              
          const highlightChild=(e)=>{
+          e.target.style.height=e.target.scrollHeight+"px";
           setIndex(e.target.getAttribute("data-id"))
              for(let i=0;i<inputBox.length;i++){
               if(i==Number( e.target.getAttribute("data-id"))){
@@ -224,7 +224,7 @@ window.dragMoveListener = dragMoveListener
          const pastText=(e)=>{
           if(index){
             inputBox[index].value=e.target.getAttribute("data-text")
-            allResize()
+              allResize()
          }
         }
 
@@ -258,6 +258,18 @@ window.dragMoveListener = dragMoveListener
                inputBox[index].style.opacity=e.target.value/100
                }
               }
+                 //chamging word space
+                 const changeWordSpace=(e)=>{
+                  if(index){
+                 inputBox[index].style.wordSpacing=(e.target.value/100)*50+"px"
+                 }
+                }
+                 //chamging line space
+                 const changeLineSpace=(e)=>{
+                  if(index){
+                 inputBox[index].style.lineHeight=(e.target.value/100)*50+"px"
+                 }
+                }
                //chamging rotate-x
                const changeRotateX=(e)=>{
                 if(index){
@@ -428,6 +440,21 @@ window.dragMoveListener = dragMoveListener
             if(index){
               inputBox[index].style.textAlign="right"
               }
+           } 
+           const [line,setLine]=React.useState(true)
+           const underline=(e)=>{
+            if(index){
+              if(line){
+                e.target.style.color="rgba(100,100,100,0.7)";
+              inputBox[index].style.textDecoration="underline";
+              setLine(!line)
+              }
+              else{
+                e.target.style.color="rgba(0,0,0,0.85)";
+                inputBox[index].style.textDecoration="none"
+                setLine(!line)
+              }
+            }
            }
     const changeBgPosition=(e)=>{
       document.querySelector(".main_design_box").style.backgroundPosition=e.target.getAttribute("data-name")
@@ -572,6 +599,14 @@ window.dragMoveListener = dragMoveListener
                         <input type="range" onChange={changeFontSize}></input>
                       </span>{/* end of width */}
                       <span className='setting_box'>
+                        <i>line-space</i>
+                        <input type="range" onChange={changeLineSpace}></input>
+                      </span>{/* end of width */}
+                      <span className='setting_box'>
+                        <i>word-space</i>
+                        <input type="range" onChange={changeWordSpace}></input>
+                      </span>{/* end of width */}
+                      <span className='setting_box'>
                         <i>Border width</i>
                         <input type="range" onChange={changeBorderWidth}></input>
                       </span>{/* end of width */}
@@ -691,6 +726,9 @@ window.dragMoveListener = dragMoveListener
                       </span>{/* end of box setting */}
                       <span className='setting_box'>
                         <span className='fa fa-align-right iconic' onClick={alignRight}></span>
+                      </span>{/* end of box setting */}
+                      <span className='setting_box'>
+                        <span className='fa fa-underline iconic' onClick={underline}></span>
                       </span>{/* end of box setting */}
                       </div>{/* end of prop set div */}
                   </div>{/* end of prop set */}

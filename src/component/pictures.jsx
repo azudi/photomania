@@ -41,8 +41,15 @@ const [side,setSide]=React.useState([
    }
 
    //changing the start attribute
+    
+   const starIcons=[...document.querySelectorAll(".fa-star-o")]
    const changeIcon=(e)=>{
-      e.target.setAttribute("class","fa fa-star")
+        for(let i=0;i<starIcons.length;i++){
+          if(i<=starIcons.indexOf(e.target)) {
+        starIcons[i].setAttribute("class","fa fa-star")  
+        }
+      }
+        
    }
      //setting local storage id
      const setId=()=>{
