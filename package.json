@@ -57,10 +57,9 @@
   "devDependencies": {
     "@types/swiper": "^5.4.3",
     "gh-pages": "^3.2.3",
-    "video.js": "^7.17.0",
-    "node.js":"^16.13.1"
+    "video.js": "^7.17.0"
   },
   "engines": {
-    "node": "14.13.0"
+    "node": "14.13.1"
   }
 }
